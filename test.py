@@ -1,13 +1,13 @@
 import requests
 
-BASE_URL = "http://localhost:8081"
+BASE_URL = "http://13.219.132.102:8080"
 
 login_data = {
-    "User_mail": "alladdfs@coorreea",  
+    "User_mail": "allan",  
     "password": "1234"                
 }
 
-login_response = requests.post(f"http://localhost:8080/login", json=login_data)
+login_response = requests.post(f"http://52.203.72.116:8080/login", json=login_data)
 
 if login_response.status_code != 200:
     print("Error al hacer login:", login_response.status_code, login_response.json())
