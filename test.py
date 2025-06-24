@@ -4,7 +4,7 @@ BASE_URL = "http://13.219.132.102:8080"
 
 login_data = {
     "User_mail": "allan",  
-    "password": "1234"                
+    "password": "12345"                
 }
 
 login_response = requests.post(f"http://52.203.72.116:8080/login", json=login_data)
@@ -20,7 +20,7 @@ print("Token recibido:", token)
 update_data = {
     "Name": "Allan",
     "Lastname": "Correa",
-    "Password": "12345"
+    "Password": "1234"
 }
 
 headers = {
