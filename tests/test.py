@@ -14,7 +14,7 @@ if login_response.status_code != 200:
     exit()
 
 token = login_response.json().get("token")
-print("Token recibido:", token)
+print("Token:", token)
 
 # endpoint edit
 update_data = {
@@ -30,5 +30,5 @@ headers = {
 
 update_response = requests.patch(f"{BASE_URL}/update-user", json=update_data, headers=headers)
 
-print("Código de respuesta:", update_response.status_code)
-print("Respuesta JSON:", update_response.json())
+print("Status:", update_response.status_code)
+print("Response:", update_response.json())
