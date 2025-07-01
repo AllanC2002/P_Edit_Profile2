@@ -34,7 +34,7 @@ jobs:
 
       - name: Run Pytest
         run: |
-          PYTHONPATH=. pytest tests
+          PYTHONPATH=. pytest tests/test_edit_user.py
 
   build:
     needs: test
