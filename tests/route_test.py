@@ -3,8 +3,8 @@ import requests
 BASE_URL = "http://13.219.132.102:8080"
 
 login_data = {
-    "User_mail": "allan",  
-    "password": "12345"                
+    "User_mail": "allancorrea",  
+    "password": "1234"                
 }
 
 login_response = requests.post(f"http://52.203.72.116:8080/login", json=login_data)
@@ -18,9 +18,9 @@ print("Token:", token)
 
 # endpoint edit
 update_data = {
-    "Name": "Allan",
-    "Lastname": "Correa",
-    "Password": "1234"
+    "Name": "Test",
+    "Lastname": "Correa"
+    #"Password": "1234"
 }
 
 headers = {
