@@ -1,13 +1,15 @@
 import requests
 
-BASE_URL = "http://13.219.132.102:8080"
+#BASE_URL = "http://13.219.132.102:8080" qa
+BASE_URL = "http://35.172.4.222:8080"
 
 login_data = {
-    "User_mail": "allancorrea",  
+    "User_mail": "allanprod3",  
     "password": "1234"                
 }
 
-login_response = requests.post(f"http://52.203.72.116:8080/login", json=login_data)
+#login_response = requests.post(f"http://52.203.72.116:8080/login", json=login_data) qa
+login_response = requests.post(f"http://100.25.74.174:8080/login", json=login_data)
 
 if login_response.status_code != 200:
     print("Error al hacer login:", login_response.status_code, login_response.json())
@@ -18,8 +20,8 @@ print("Token:", token)
 
 # endpoint edit
 update_data = {
-    "Name": "Test",
-    "Lastname": "Correa"
+    "Name": "Video 2",
+    "Lastname": "Production 2"
     #"Password": "1234"
 }
 
